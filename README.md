@@ -9,7 +9,7 @@
 | Algorithm | Java    | C++ | C   | JavaScript | Python |
 | --------- | ------- | --- | --- | ---------- | ------ |
 | QuickSort | &check; | -   | -   | -          | -      |
-
+| Linear Search | &check; | -|-|-|-|
 #### **_Data Structures_ Implemented**
 
 | Data Structure | Java | C++     | C   | JavaScript | Python |
