@@ -120,7 +120,7 @@ fabric.properties
 # Sonarlint plugin
 # https://plugins.jetbrains.com/plugin/7973-sonarlint
 .idea/**/sonarlint/
-
+.idea/
 # SonarQube Plugin
 # https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
 .idea/**/sonarIssues.xml
@@ -435,4 +435,4 @@ dmypy.json
 # profiling data
 .prof
 
-# End of https://www.toptal.com/developers/gitignore/api/java,c++,objective-c,python,pycharm,intellij
+# End of https://www.toptal.com/developers/gitignore/api/java,c++,objective-c,python,pycharm,intellij.idea/
