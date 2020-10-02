@@ -14,3 +14,5 @@ The simple approach to do the linear search is:
 #### Time Complexity
 The time complexity is very high in this case and is not considered good searching algorithm for large arrays. The 
 Big-O notation for the algorithm is O(n).
+
+> Instead of this algorithms the hash tables and binary search algorithms are more frequently used.
