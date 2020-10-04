@@ -16,6 +16,6 @@
 
 #### **_Data Structures_ Implemented**
 
-| Data Structure | Java | C++     | C   | JavaScript | Python |
-| -------------- | ---- | ------- | --- | ---------- | ------ |
-| Stack          | -    | &check; | -   | -          | -      |
+| Data Structure | Java    | C++     | C   | JavaScript | Python |
+| -------------- | ------- | ------- | --- | ---------- | ------ |
+| Stack          | &check; | &check; | -   | -          | -      |
