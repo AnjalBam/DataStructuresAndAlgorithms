@@ -19,3 +19,5 @@
 | Data Structure | Java    | C++     | C   | JavaScript | Python |
 | -------------- | ------- | ------- | --- | ---------- | ------ |
 | Stack          | &check; | &check; | -   | -          | -      |
+| Linear Queue   | -       | &check; | -   | -          | -      |
+| Circular Queue | -       | &check; | -   | -          | -      |
