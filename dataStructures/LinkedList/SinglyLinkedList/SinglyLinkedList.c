@@ -12,6 +12,25 @@ struct Node {
   struct Node* next;
 };
 
+int get_data() {
+  int data;
+  printf("Enter data you want to insert: ");
+  scanf("%d", &data);
+  return data;
+}
+
+void insert_node_at_front(struct Node** head) {
+  /*
+  @param head: reference of Head of the original Linked List
+  @param node: Node to be inserted at the front of the linked list
+  */
+  struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
+  int data = get_data();
+  new_node->data = data;
+  new_node->next = *head;
+  *head = new_node;
+}
+
 void print_linked_list(struct Node* node) {
   while (node != NULL)
   {
@@ -38,5 +57,8 @@ int main(void)
   third->next = NULL;
 
   print_linked_list(head);
+  insert_node_at_front(&head);
+  print_linked_list(head);
+
   return 0;
 }
