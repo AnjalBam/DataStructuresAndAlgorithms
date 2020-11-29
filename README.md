@@ -16,8 +16,9 @@
 
 #### **_Data Structures_ Implemented**
 
-| Data Structure | Java    | C++     | C   | JavaScript | Python |
-| -------------- | ------- | ------- | --- | ---------- | ------ |
-| Stack          | &check; | &check; | -   | -          | -      |
-| Linear Queue   | -       | &check; | -   | -          | -      |
-| Circular Queue | -       | &check; | -   | -          | -      |
+| Data Structure     | Java    | C++     | C       | JavaScript | Python  |
+| ------------------ | ------- | ------- | ------- | ---------- | ------- |
+| Stack              | &check; | &check; | -       | -          | -       |
+| Linear Queue       | -       | &check; | -       | -          | -       |
+| Circular Queue     | -       | &check; | -       | -          | -       |
+| Singly Linked List | &check; | &check; | &check; | -          | &check; |
