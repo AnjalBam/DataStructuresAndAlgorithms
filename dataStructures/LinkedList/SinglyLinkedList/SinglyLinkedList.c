@@ -6,6 +6,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 struct Node {
   int data;
@@ -65,7 +66,7 @@ void print_linked_list(struct Node* node) {
     printf("%d ", node->data);
     node = node->next;
   }
-  printf("\n");
+  // printf("\n");
 }
 
 void insert_after_node(struct Node* node_after) 
@@ -110,10 +111,10 @@ int main(void)
   third->next = NULL;
 
   print_linked_list(head);
-  // insert_node_at_front(&head);
-  // insert_at_end(&head);
+  insert_node_at_front(&head);
+  print_linked_list(head);
+  insert_at_end(&head);
+  print_linked_list(head);
   insert_after_node(second);
   print_linked_list(head);
-
-  return 0;
 }
