@@ -71,3 +71,13 @@ The insertion of an element is the performed using the following algorithm.
 - set prev node's next to new node
 
 > The Insertion process in this linked list has time complexity of **O(1)** which is quite efficient.
+
+##### Deletion
+
+The deletion is the process of removing an element or a key from the list. It can be achieved with the following algorithm.
+Steps:
+
+- Traverse to find the node
+- Keep the track of prev node as well
+- Set the prev node's next to the found/current node's next (_Unlinking Node_)
+- Free the current node
