@@ -15,6 +15,7 @@ It is a type of linked list in which each node is connected via pointer and has 
 The node structure contains the Data part as well as the node reference part;
 
 ```c
+// in C
 struct Node {
   int data;
   struct Node* next;
@@ -22,6 +23,7 @@ struct Node {
 ```
 
 ```cpp
+  // in C++
   class Node
   {
     int data;
@@ -30,6 +32,7 @@ struct Node {
 ```
 
 ```python
+  # In python
   class Node:
     def __init__(self):
       self.data = None
@@ -37,6 +40,7 @@ struct Node {
 ```
 
 ```java
+  // in java
   static class Node
   {
     int data;
@@ -59,4 +63,11 @@ struct Node {
 
 ##### Insertion
 
-The insertion of an element is the performed using the following algorithm. - Define new node - set data to new node - set new node's next to prev node
+The insertion of an element is the performed using the following algorithm.
+
+- Define new node
+- set data to new node
+- set new node's next to prev node's next
+- set prev node's next to new node
+
+> The Insertion process in this linked list has time complexity of **O(1)** which is quite efficient.
