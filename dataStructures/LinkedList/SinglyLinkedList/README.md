@@ -10,4 +10,53 @@ It is a simple type of Linear data structure in which data is stored in terms of
 
 ### Singly Linked List
 
-It is a type of linked list in which each node is connected via pointer and has a data and a pointer that points to the next node or to the Null if no data is available or the is the last element/node in the list.
+It is a type of linked list in which each node is connected via pointer and has a data and a pointer/reference that points to the next node or to the Null if no data is available or is the last element/node in the list.
+
+The node structure contains the Data part as well as the node reference part;
+
+```c
+struct Node {
+  int data;
+  struct Node* next;
+};
+```
+
+```cpp
+  class Node
+  {
+    int data;
+    Node* next;
+  };
+```
+
+```python
+  class Node:
+    def __init__(self):
+      self.data = None
+      self.next = None
+```
+
+```java
+  static class Node
+  {
+    int data;
+    Node next;
+  }
+```
+
+#### Operations to be performed
+
+- Insertion
+
+  - at the front/head(push)
+  - at the end(append)
+  - after a given key
+
+- Deletion
+- Searching
+- Traversing
+- Reversing
+
+##### Insertion
+
+The insertion of an element is the performed using the following algorithm. - Define new node - set data to new node - set new node's next to prev node
