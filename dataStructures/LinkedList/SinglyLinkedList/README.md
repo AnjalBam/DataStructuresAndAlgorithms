@@ -81,3 +81,5 @@ Steps:
 - Keep the track of prev node as well
 - Set the prev node's next to the found/current node's next (_Unlinking Node_)
 - Free the current node
+
+> The time complexity of this algorithm is **O(n)**, where n is the no. of nodes in the linked list
