@@ -41,7 +41,7 @@ void push(struct node**, int);
 // - At the end => append();
 void append(struct node**, int);
 // - Before the given value => insert_before();
-void insert_after(int, int);
+void insert_after(struct node**, int, int);
 // - After the given value => insert_after();
 void insert_before(int, int);
 
@@ -54,6 +54,9 @@ int main(void)
   print_linked_list(head);
   append(&head, 30);
   append(&head, 100);
+  print_linked_list(head);
+  insert_after(&head, 30, 7);
+  insert_after(&head, 30, 12);
   print_linked_list(head);
   return 0;
 }
@@ -121,10 +124,31 @@ This function inserts the data after the first match for the data provided as th
 @param ref_data: the data after which the data is to be inserted;
 @param data: the data which is to be inserted;
 */
-void insert_after(int ref_data, int new_data)
+void insert_after(struct node** head_ref, int ref_data, int new_data)
 {
   // create node with the data
   struct node* new_node = create_node(new_data);
 
   // traverse to find the first matching value in the list;
+  struct node* temp = (*head_ref), *prev_node;
+  while(temp != NULL)
+  {
+    if (temp->data == ref_data)
+    {
+      prev_node = temp;
+      break;
+    }
+    temp = temp->next_node;
+  }
+
+  // inserting operation;
+  // make new node next_node point the previous node's next node;
+  new_node->next_node = prev_node->next_node;
+  // first make the next of prev node point the new node;
+  prev_node->next_node = new_node;
+  // make the new node's prev node point the previous_node
+  new_node->prev_node = prev_node;
+
+  if(new_node->next_node != NULL)
+    new_node->next_node->prev_node = new_node;
 }
